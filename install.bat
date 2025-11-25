@@ -24,8 +24,8 @@ echo ✅ Node.js and npm are installed
 echo.
 
 REM Install the package globally
-echo 📦 Installing weathernow-cli globally...
-npm install -g weathernow-cli
+echo 📦 Installing @mark_alber/weathernow-cli globally...
+npm install -g @mark_alber/weathernow-cli
 
 echo.
 echo 🎉 Installation complete!
@@ -37,4 +37,4 @@ echo    set WEATHER_API_KEY=your_api_key_here
 echo 3. Test the installation:
 echo    weathernow London
 echo.
-echo For more help, visit: https://github.com//weathernow-cli
+echo For more help, visit: https://github.com/mark-alber/weathernow-cli

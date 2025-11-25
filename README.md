@@ -5,7 +5,7 @@ A simple command-line tool to get current weather information for any location w
 ## Quick Install
 
 ```bash
-npm install -g weathernow-cli
+npm install -g @mark_alber/weathernow-cli
 ```
 
 That's it! Now you can use `weathernow` from anywhere in your terminal.
@@ -95,19 +95,43 @@ $ weathernow Paris humidity
 
 ## Alternative Installation Methods
 
-### From Source
+### Option 1: One-liner Script (Linux/macOS)
 ```bash
-git clone https://github.com/yourusername/weathernow-cli.git
+curl -sSL https://raw.githubusercontent.com/MarkCoder1/weathernow-cli/main/install.sh | bash
+```
+
+### Option 2: One-liner Script (Windows)
+```powershell
+# PowerShell
+iwr -useb https://raw.githubusercontent.com/mark-alber/weathernow-cli/main/install.ps1 | iex
+```
+
+### Option 3: From Source
+```bash
+git clone https://github.com/mark-alber/weathernow-cli.git
 cd weathernow-cli
 npm install -g .
 ```
 
-### Local Development
+### Option 4: Local Development
 ```bash
-git clone https://github.com/yourusername/weathernow-cli.git
+git clone https://github.com/mark-alber/weathernow-cli.git
 cd weathernow-cli
 npm install
 cp .env.example .env
 # Edit .env with your API key
 node index.js London
+```
+
+## Publishing to npm (For Maintainers)
+
+```bash
+# 1. Login to npm
+npm login
+
+# 2. Publish the package
+npm publish
+
+# 3. Users can then install with:
+npm install -g @mark_alber/weathernow-cli
 ```

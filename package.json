@@ -1,10 +1,10 @@
 {
-      "name": "weathernow-cli",
+      "name": "@mark_alber/weathernow-cli",
       "version": "1.0.0",
       "description": "A simple CLI tool to get current weather information for any location",
       "main": "index.js",
       "bin": {
-            "weathernow": "./index.js"
+            "weathernow": "index.js"
       },
       "scripts": {
             "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,12 +22,12 @@
       "license": "MIT",
       "repository": {
             "type": "git",
-            "url": "https://github.com/yourusername/weathernow-cli.git"
+            "url": "git+https://github.com/mark-alber/weathernow-cli.git"
       },
       "bugs": {
-            "url": "https://github.com/yourusername/weathernow-cli/issues"
+            "url": "https://github.com/mark-alber/weathernow-cli/issues"
       },
-      "homepage": "https://github.com/yourusername/weathernow-cli#readme",
+      "homepage": "https://github.com/mark-alber/weathernow-cli#readme",
       "engines": {
             "node": ">=14.0.0"
       },
@@ -39,6 +39,9 @@
             "index.js",
             "README.md",
             "LICENSE",
-            ".env.example"
+            ".env.example",
+            "install.sh",
+            "install.bat",
+            "install.ps1"
       ]
 }
